@@ -14,7 +14,7 @@ let timeCount = 0
 function calculateTime() {
     timeValue += time.value
     timeSplit = time.value.split(':')
-    tapIn.innerHTML = `Calculated Time is ${time.value}`
+    tapIn.innerHTML = `Calculated Time is ${time.value}.`
     let hoursCalc = parseInt(timeSplit[0], 10) * 60 + parseInt(timeSplit[1], 10)
 
     for(let x = 1; x < timeInputsContainer.childElementCount; x++) {
@@ -37,4 +37,8 @@ function addTimeButton() {
     newInput.step = 2
     timeInputsContainer.appendChild(newInput)
     
+}
+
+function resetButton() {
+    location.reload()
 }
