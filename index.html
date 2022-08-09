@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="entireContainer">
+
+    <header>
+        <h1>Time Calculator</h1>
+        <h3 class="subHeader">Add Up The Time</h3>
+    </header>
+
+    <section class="calcOutputSection">
+        <div class="calcOutputContainer">
+            <h3 class="calcOutText">Enter in time values</h3>
+        </div>
+
+        <div class="timeInputsComponent">
+            <div class="timeInputsContainer">
+                <input type="time" name="time" id="time" step="2">
+            </div>
+            <div class="buttonsContainer">
+                <button onclick="calculateTime()">Calculate Time</button>
+                <button onclick="addTimeButton()">Add Another Time</button>
+            </div>
+        </div>
+
+        <div class="outputAnswerContainer">
+            <h3 style="display: none" id="outputAnswer"></h3>
+        </div>
+    </section>
+
+</div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
